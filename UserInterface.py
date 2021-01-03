@@ -34,6 +34,7 @@ def get_name():
     def get_text():
         file = open('data.txt', 'a')
         file.write(name_entry.get())
+        file.write('\n')
         file.close()
         master.destroy()
 
